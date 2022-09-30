@@ -25,6 +25,21 @@ def search2(wd):
 	 l2 = [k for k,v in di.items() if wd in k]
 	 for z in range(len(l2)):
 	 	print(l2[z] + ": " + l1[z])
+		
+def tokiponize(phr):
+	a = phr.replace("b","p")
+	b = a.replace("c","k")
+	c = b.replace("d","t")
+	d = c.replace("f","j")
+	e = d.replace("g","j")
+	f = e.replace("h","")
+	g = f.replace("q","k")
+	h = g.replace("r","l")
+	i = h.replace("v","u")
+	j = i.replace("x","ks")
+	k = j.replace("y","i")
+	l = k.replace("z","ts")
+	return l
 	 	
 if n == 1:
 	wd = input("Enter a word/letter: ")
